@@ -2,21 +2,21 @@ DEVICE := $(shell echo ${DEVICE})
 BRANCH := $(shell git -C .. rev-parse --abbrev-ref HEAD)
 
 ifeq ($(findstring 10,$(BRANCH)),10)
-    ifeq ($(findstring vince,$(DEVICE)),vince)
-        NAME := Genom-vince-msm-4.9-AOSP-10
+    ifeq ($(findstring ginkgo,$(DEVICE)),ginkgo)
+        NAME := Genom-ginkgo-AOSP-10
     else
         NAME := Genom-$(DEVICE)-AOSP-10
     endif
     DATE := $(shell date "+%Y%m%d")
     ZIP := $(NAME)-$(DATE).zip
 else
-    ifeq ($(findstring lavender,$(DEVICE)),lavender)
-        NAME := Genom-lavender-UNIFIED-Pie
+    ifeq ($(findstring whyred,$(DEVICE)),whyred)
+        NAME := RyzenKernel-Whyred-MIUI-Pie
     else
-    ifeq ($(findstring vince,$(DEVICE)),vince)
-        NAME := Genom-vince-MIUI-Oreo
+    ifeq ($(findstring ginkgo,$(DEVICE)),ginkgo)
+        NAME := RyzenKernel-Ginkgo-MIUI-Pie
     else
-        NAME := Genom-$(DEVICE)-UNIFIED-Pie
+        NAME := RyzenKernel-Ginkgo-MIUI-Pie
     endif
     endif
     DATE := $(shell date "+%Y%m%d")
