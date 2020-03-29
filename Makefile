@@ -3,9 +3,9 @@ BRANCH := $(shell git -C .. rev-parse --abbrev-ref HEAD)
 
 ifeq ($(findstring 10,$(BRANCH)),10)
     ifeq ($(findstring ginkgo,$(DEVICE)),ginkgo)
-        NAME := Genom-ginkgo-AOSP-10
+        NAME := RyzenKernel-ginkgo-10
     else
-        NAME := Genom-$(DEVICE)-AOSP-10
+        NAME := RyzenKernel-$(DEVICE)-10
     endif
     DATE := $(shell date "+%Y%m%d")
     ZIP := $(NAME)-$(DATE).zip
