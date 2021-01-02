@@ -16,7 +16,7 @@ else
     ifeq ($(findstring ginkgo,$(DEVICE)),ginkgo)
         NAME := RyzenKernel-Ginkgo-10
     else
-        NAME := RyzenKernel-Ginkgo-MIUI-Pie
+        NAME := RyzenKernel-Ginkgo-10
     endif
     endif
     DATE := $(shell date "+%Y%m%d")
