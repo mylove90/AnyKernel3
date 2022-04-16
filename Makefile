@@ -11,12 +11,12 @@ ifeq ($(findstring 10,$(BRANCH)),10)
     ZIP := $(NAME)-$(DATE).zip
 else
     ifeq ($(findstring whyred,$(DEVICE)),whyred)
-        NAME := RyzenKernel-Ginkgo-
+        NAME := RyzenKernel-Ginkgo
     else
     ifeq ($(findstring ginkgo,$(DEVICE)),ginkgo)
-        NAME := RyzenKernel-Ginkgo-
+        NAME := RyzenKernel-Ginkgo
     else
-        NAME := RyzenKernel-Ginkgo-
+        NAME := RyzenKernel-Ginkgo
     endif
     endif
     DATE := $(shell date "+%Y%m%d")
