@@ -4,7 +4,7 @@
 ### AnyKernel setup
 # global properties
 properties() { '
-kernel.string=PureMtk by MY♡90 @ xda-developers
+kernel.string=PureMtk by MY♡90 - Patched for APatch @ xda-developers
 do.devicecheck=0
 do.modules=1
 do.systemless=0
@@ -29,7 +29,7 @@ set_perm_recursive 0 0 750 750 $RAMDISK/init* $RAMDISK/sbin;
 } # end attributes
 
 # boot shell variables
-BLOCK=/dev/block/by-name/boot;
+BLOCK=/dev/block/platform/bootdevice/by-name/boot;
 IS_SLOT_DEVICE=0;
 RAMDISK_COMPRESSION=auto;
 PATCH_VBMETA_FLAG=auto;
